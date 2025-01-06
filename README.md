@@ -1,3 +1,9 @@
+# Disclaimer
+This is the inofficial repository of MotionGPT, used to fix the broken installation process. You can follow the regular
+installation process down below like usual though, there are no extra steps. 
+
+When you run the project, keep in mind that the local link does not work, only the public link.
+
 <div align= "center">
     <h1> Official repo for MotionGPT <img src="./assets/images/avatar_bot.jpg" width="35px"></h1>
 
