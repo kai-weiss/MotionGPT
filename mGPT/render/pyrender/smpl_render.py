@@ -14,7 +14,7 @@ from shapely import geometry
 from smplx import SMPL as _SMPL
 from smplx.utils import SMPLOutput as ModelOutput
 from scipy.spatial.transform.rotation import Rotation as RRR
-
+from mGPT.data.transforms.joints2rots import config
 
 class Renderer:
     """
@@ -121,7 +121,7 @@ class SMPLRender():
         else:
             self.device = torch.device("cpu")
         # self.smpl = SMPL(SMPL_MODEL_DIR, batch_size=1, create_transl=False).to(self.device)
-        self.smpl = smplx.create(Path(SMPL_MODEL_DIR).parent,
+        self.smpl = smplx.create(config.SLOW_SMPL_MODEL_DIR,
                                  model_type="smpl",
                                  gender="neutral",
                                  ext="npz",
